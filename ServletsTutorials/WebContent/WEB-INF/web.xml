@@ -12,4 +12,13 @@
 		<servlet-name>LifeCycleMethodsExample</servlet-name>
 		<url-pattern>/LifeCycleMethodsExample</url-pattern>
 	</servlet-mapping>
+	<servlet>
+		<servlet-name>LoadOnStartUpExample</servlet-name>
+		<servlet-class>com.madhav.LoadOnStartUpExample</servlet-class>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>LoadOnStartUpExample</servlet-name>
+		<url-pattern>/LoadOnStartUpExample</url-pattern>
+	</servlet-mapping>
 </web-app>
