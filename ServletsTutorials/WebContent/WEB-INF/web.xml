@@ -15,8 +15,16 @@
 	<servlet>
 		<servlet-name>LoadOnStartUpExample</servlet-name>
 		<servlet-class>com.madhav.LoadOnStartUpExample</servlet-class>
-		<load-on-startup>1</load-on-startup>
+		<!-- <load-on-startup>1</load-on-startup>-->
 	</servlet>
+	<servlet>
+		<servlet-name>StudentRegistrationServlet</servlet-name>
+		<servlet-class>com.madhav.StudentRegistrationServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>StudentRegistrationServlet</servlet-name>
+		<url-pattern>/StudentRegistrationServlet</url-pattern>
+	</servlet-mapping>
 	<servlet-mapping>
 		<servlet-name>LoadOnStartUpExample</servlet-name>
 		<url-pattern>/LoadOnStartUpExample</url-pattern>
@@ -29,4 +37,20 @@
 		<servlet-name>GenericServletExample</servlet-name>
 		<url-pattern>/GenericServletExample</url-pattern>
 	</servlet-mapping>
+	<context-param>
+		<param-name>driver</param-name>
+		<param-value>oracle.jdbc.OracleDriver</param-value>
+	</context-param>
+	<context-param>
+		<param-name>url</param-name>
+		<param-value>jdbc:oracle:thin:@localhost:1521:orcl</param-value>
+	</context-param>
+	<context-param>
+		<param-name>username</param-name>
+		<param-value>crmuser</param-value>
+	</context-param>
+	<context-param>
+		<param-name>password</param-name>
+		<param-value>crmuser</param-value>
+	</context-param>
 </web-app>
