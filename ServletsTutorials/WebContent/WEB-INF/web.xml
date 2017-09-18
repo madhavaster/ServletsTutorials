@@ -21,4 +21,12 @@
 		<servlet-name>LoadOnStartUpExample</servlet-name>
 		<url-pattern>/LoadOnStartUpExample</url-pattern>
 	</servlet-mapping>
+	<servlet>
+		<servlet-name>GenericServletExample</servlet-name>
+		<servlet-class>com.madhav.GenericServletExample</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>GenericServletExample</servlet-name>
+		<url-pattern>/GenericServletExample</url-pattern>
+	</servlet-mapping>
 </web-app>
