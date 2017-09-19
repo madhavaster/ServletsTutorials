@@ -37,6 +37,14 @@
 		<servlet-name>GenericServletExample</servlet-name>
 		<url-pattern>/GenericServletExample</url-pattern>
 	</servlet-mapping>
+	<servlet>
+		<servlet-name>CourseRegistrationServlet</servlet-name>
+		<servlet-class>com.madhav.CourseRegistrationServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>CourseRegistrationServlet</servlet-name>
+		<url-pattern>/CourseRegistrationServlet</url-pattern>
+	</servlet-mapping>
 	<context-param>
 		<param-name>driver</param-name>
 		<param-value>oracle.jdbc.OracleDriver</param-value>

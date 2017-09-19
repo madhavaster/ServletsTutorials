@@ -39,11 +39,11 @@ public class StudentRegistrationServlet extends GenericServlet{
 		ps.setString(3,address);
 		int i=ps.executeUpdate();
 		if(i!=0)
-			out.println("Registration successful!!!");
+			out.println("Student Registration successful!!!");
 		else
-			out.println("Registration failed!!!!");
+			out.println("Student Registration failed!!!!");
 		}catch(Exception e) {
-			out.println("Registration failed!!!!");
+			out.println("Student Registration failed!!!!");
 			e.printStackTrace();
 		}
 	}
