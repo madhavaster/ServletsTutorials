@@ -4,6 +4,7 @@ import java.io.PrintWriter;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
+import java.sql.SQLException;
 
 import javax.servlet.GenericServlet;
 import javax.servlet.ServletConfig;
@@ -52,4 +53,11 @@ public class CourseRegistrationServlet extends GenericServlet{
 
 	}
 
+	public void destroy() {
+		try{
+			con.close();
+		}catch(SQLException sqlException) {
+			System.out.println("SQLException occured:"+sqlException.getMessage());
+		}
+	}
 }

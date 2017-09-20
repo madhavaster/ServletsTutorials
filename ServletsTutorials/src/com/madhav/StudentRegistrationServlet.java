@@ -10,6 +10,7 @@ import javax.servlet.ServletConfig;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
+import java.sql.SQLException;
 import java.io.PrintWriter;
 public class StudentRegistrationServlet extends GenericServlet{
 	private Connection con;
@@ -45,6 +46,13 @@ public class StudentRegistrationServlet extends GenericServlet{
 		}catch(Exception e) {
 			out.println("Student Registration failed!!!!");
 			e.printStackTrace();
+		}
+	}
+	public void destroy() {
+		try {
+		con.close();
+		}catch(SQLException sqlException) {
+			System.out.println("SQLException occured:"+sqlException.getMessage());
 		}
 	}
 }

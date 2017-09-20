@@ -45,6 +45,14 @@
 		<servlet-name>CourseRegistrationServlet</servlet-name>
 		<url-pattern>/CourseRegistrationServlet</url-pattern>
 	</servlet-mapping>
+	<servlet>
+		<servlet-name>AadharRegistrationServlet</servlet-name>
+		<servlet-class>com.madhav.AadharRegistrationServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AadharRegistrationServlet</servlet-name>
+		<url-pattern>/AadharRegistrationServlet</url-pattern>
+	</servlet-mapping>
 	<context-param>
 		<param-name>driver</param-name>
 		<param-value>oracle.jdbc.OracleDriver</param-value>
