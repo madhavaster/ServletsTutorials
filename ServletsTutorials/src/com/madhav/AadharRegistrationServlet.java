@@ -14,6 +14,7 @@ import java.sql.PreparedStatement;
 public class AadharRegistrationServlet extends HttpServlet{
 	private Connection conn;
 	public void init(ServletConfig config) {
+		System.out.println("madhava");
 		ServletContext context =config.getServletContext();
 		String driver=context.getInitParameter("driver");
 		String url=context.getInitParameter("url");
